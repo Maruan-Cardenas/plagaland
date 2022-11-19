@@ -3,7 +3,7 @@ import styles from './Home.module.scss'
 
 // Components
 import Layout from '../components/Layout'
-import SwiperCarouselBanner from '../components/SwiperCarousel/SwiperCarouseBanner'
+import SwiperCarouselBanner from '../components/Swiper/Banner'
 import Card from '../components/Card'
 
 // Image

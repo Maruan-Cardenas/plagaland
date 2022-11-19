@@ -11,7 +11,7 @@ import 'swiper/css/scrollbar'
 
 // Components
 import Image from 'next/image'
-import { SlideNextButton, SlidePrevButton } from './SwiperButtons'
+import { SlideNextButton, SlidePrevButton } from './Buttons'
 
 // Images
 import image1 from '../../public/images/image1.webp'
