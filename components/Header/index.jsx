@@ -15,7 +15,7 @@ const Header = () => {
       <header className={styles.header}>
         <div className={styles.logo}>
           <Link href='/'>
-            <Image layout='responsive' src={logo} alt='Logo' />
+            <Image src={logo} alt='Logo' />
           </Link>
         </div>
         <Nav />
