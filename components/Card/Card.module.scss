@@ -1,0 +1,22 @@
+.card {
+  width: 90vw;
+  height: 23em;
+  background-color: #359c2c;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 4px black;
+
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .description {
+    padding: 1rem;
+  }
+
+}

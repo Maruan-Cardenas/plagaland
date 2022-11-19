@@ -1,0 +1,94 @@
+.nav,
+.navClose {
+  ul {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    width: 100%;
+    height: 90vh;
+    transition: transform 1s;
+
+    @media screen and (min-width: 768px) {
+      position: static;
+      flex-direction: row;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: transparent;
+      height: auto;
+    }
+  }
+
+  .button,
+  .buttonClose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 10vh;
+    padding: .2rem;
+    background-color: #359c2c;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+
+    @media screen and (min-width:768px) {
+      display: none;
+    }
+
+    div {
+      position: relative;
+      width: 100%;
+      height: 4px;
+      background-color: white;
+      border-radius: 2px;
+      transition: transform 1s ease-out;
+
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        border-radius: 2px;
+        transition: transform 1s ease-out;
+      }
+
+      &::before {
+        top: -10px;
+      }
+
+      &::after {
+        top: 10px;
+      }
+    }
+  }
+
+  .buttonClose {
+    div {
+      transform: rotate(45deg);
+      top: 0;
+
+      &::before {
+        transform: rotate(90deg);
+        top: 0;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.navClose {
+  ul {
+    transform: translate(-100%);
+  }
+}
