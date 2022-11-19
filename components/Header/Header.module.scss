@@ -12,7 +12,9 @@
   z-index: 50;
 
   .logo {
-    width: 160px;
+    img {
+      height: 60px;
+    }
   }
 }
 
