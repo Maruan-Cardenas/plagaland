@@ -1,3 +1,5 @@
+@import '../styles/colors.scss';
+
 .description {
   display: flex;
   align-items: center;
@@ -6,9 +8,8 @@
   font-size: 1em;
   margin: 2rem 0;
   padding: .5rem;
-  border: 1px solid #359c2c;
   border-radius: 1rem;
-  box-shadow: 0px 0px 4px #359c2c;
+  box-shadow: 0px 0px 4px $verde-2;
   width: 90vw;
 
   @media screen and (min-width: 768px) {

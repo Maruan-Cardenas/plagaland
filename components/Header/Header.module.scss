@@ -1,3 +1,5 @@
+@import '../../styles/colors.scss';
+
 .header {
   position: fixed;
   height: 10vh;
@@ -6,14 +8,19 @@
   align-items: center;
   color: black;
   transition: position 5s;
-  border-bottom: 2px solid black;
-  background-color: white;
+  border-bottom: .3rem solid $blue-2;
+  background-color: $white;
   width: 100%;
   z-index: 50;
+  padding: 0 0 0 1rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 0 0 2rem;
+  }
 
   .logo {
     img {
-      height: 60px;
+      height: 50px;
     }
   }
 }

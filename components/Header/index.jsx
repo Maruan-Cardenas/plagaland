@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // Images
-import logo from '../../public/images/Logo.webp'
+import logo from '../../public/images/logo.png'
 import Nav from '../Nav'
 
 const Header = () => {
