@@ -20,7 +20,7 @@ const Header = () => {
         </div>
         <Nav />
       </header>
-      <div className={styles.box} />
+      <div id='inicio' className={styles.box} />
     </>
   )
 }

@@ -6,13 +6,85 @@
   justify-content: center;
   color: black;
   font-size: 1em;
-  margin: 2rem 0;
+  margin: 10vh 0;
   padding: .5rem;
   border-radius: 1rem;
-  box-shadow: 0px 0px 4px $verde-2;
+  box-shadow: 0px 0px 4px $green-2;
   width: 90vw;
 
   @media screen and (min-width: 768px) {
     width: 70vw;
+  }
+
+}
+
+.description2 {
+  position: relative;
+  width: 90vw;
+  margin: 10vh;
+  color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 4px $orange;
+
+  @media screen and (min-width:768px) {
+    width: 70vw;
+  }
+}
+
+.cardBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    position: relative;
+    font-size: 1.5rem;
+    margin: 2rem;
+    color: black;
+    font-weight: bold;
+
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
+
+    .line,
+    .line2 {
+      position: absolute;
+      bottom: -10px;
+      width: 50%;
+      height: 3px;
+      background-color: Black;
+
+      @media screen and (min-width: 768px) {
+        background-color: white;
+      }
+    }
+
+    .line2 {
+      bottom: -20px;
+      width: 25%;
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 0;
+
+    @media screen and (min-width: 768px) {
+      width: 70vw;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(70deg, $green-1, $green-2);
+    padding: 2rem;
   }
 }

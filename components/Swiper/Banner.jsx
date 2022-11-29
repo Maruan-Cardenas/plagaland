@@ -24,7 +24,6 @@ const SwiperCarouselBanner = () => {
   return (
     <>
       <Swiper
-        // install Swiper modules
         className={styles.swiperBanner}
         modules={[Pagination, A11y, Autoplay, EffectFade]}
         spaceBetween={10}
@@ -35,7 +34,7 @@ const SwiperCarouselBanner = () => {
       >
         <div className={styles.title}>
           <SlidePrevButton />
-          <h1>Control de plagas de Andalucía y Madrid</h1>
+          <h1>Control de plagas en Andalucía</h1>
           <SlideNextButton />
         </div>
         <SwiperSlide>

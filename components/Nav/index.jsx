@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useState } from 'react'
 
 import styles from './Nav.module.scss'
@@ -8,8 +9,21 @@ const Nav = () => {
     <>
       <nav className={nav ? styles.navClose : styles.nav}>
         <ul>
-          <li>Inicio</li>
-          <li>Conócenos</li>
+          <li>
+            <Link href='#inicio'>
+              Inicio
+            </Link>
+          </li>
+          <li>
+            <Link href='#especialidad'>
+              Especialidad
+            </Link>
+          </li>
+          <li>
+            <Link href='#contacto'>
+              Contacto
+            </Link>
+          </li>
         </ul>
         <button className={nav ? styles.button : styles.buttonClose} onClick={() => setNav(!nav)}><div /></button>
       </nav>

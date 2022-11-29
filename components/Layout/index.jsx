@@ -3,6 +3,7 @@ import styles from './Layout.module.scss'
 // Next Components
 import Head from 'next/head'
 import Header from '../Header'
+import Footer from '../Footer'
 
 const Layout = ({ children, title }) => {
   return (
@@ -12,6 +13,7 @@ const Layout = ({ children, title }) => {
       </Head>
       <Header />
       <main className={styles.main}>{children}</main>
+      <Footer />
     </>
   )
 }

@@ -1,0 +1,67 @@
+@import '../../styles/colors.scss';
+
+.form {
+  width: 100vw;
+  background-color: $orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  .formBox {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      width: 70vw;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 90%;
+
+        input {
+          width: 50%;
+        }
+      }
+
+      input,
+      textarea,
+      button {
+        width: 90%;
+        padding: 1rem;
+        box-shadow: 0px 0px 5px $blue-1;
+        border-radius: .5rem;
+      }
+
+      button {
+        background-color: $blue-2;
+        width: 25vw;
+        transition: box-shadow 1s, background-color 1s;
+
+        &:hover {
+          box-shadow: none;
+          background-color: $blue-1;
+        }
+      }
+    }
+  }
+}
