@@ -9,9 +9,11 @@ import Form from '../components/Form'
 
 // Image
 import cucaracha from '../public/images/cucaracha.jpg'
+import cucarachaPng from '../public/images/cucaracha.png'
 import chinche from '../public/images/chinche.png'
 import hormiga from '../public/images/hormiga.webp'
 import rata from '../public/images/ratas.jpg'
+import Image from 'next/image'
 
 const cards = [{
   image: cucaracha,
@@ -42,6 +44,7 @@ export default function Home () {
     <Layout title='Plagaland'>
       <SwiperCarouselBanner />
       <div className={styles.description}>
+        <Image className={styles.image} src={cucarachaPng} alt='Eliminación de cucarachas' />
         <p>Plagaland es una empresa de control de plagas especializada en la fumigación, desinfección y desratización.</p>
         <p>Nos esforzamos en proporcionar rápidamente tratamientos eficaces en las provincias de Málaga y Granada. Para ello realizamos la aplicación del mejor producto y la prestación de un excelente servicio postventa</p>
       </div>
@@ -57,14 +60,15 @@ export default function Home () {
           }
         </div>
       </section>
-      <div className={styles.description2}>
+      <section className={styles.description2}>
+        <h2>El problema de las plagas</h2>
         <p>
           Las plagas es un problema muy común que los hogares y negocios experimentan alguna vez, con mayor o menos intensidad. En Plagaland somos conscientes de lo importante que es intervenir rápido e identificar cuanto antes la presencia de insectos, roedores.
         </p>
         <p>
           Intervenimos de manera urgente con cuatro métodos de erradicación: desinfectar, desinsectar, fumigar y desratizar.
         </p>
-      </div>
+      </section>
       <Form />
     </Layout>
   )

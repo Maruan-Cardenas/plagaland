@@ -4,12 +4,14 @@ import styles from './Cucarachas.module.scss'
 // Components
 import Layout from '../../components/Layout'
 import Image from 'next/image'
+import Title from '../../components/Title'
+import Form from '../../components/Form'
 
 // Images
 import cucaracha from '../../public/images/cucaracha.jpg'
-import Form from '../../components/Form'
-import Title from '../../components/Title'
-
+import cucarachaAmericana from '../../public/images/cucaracha-americana.jpg'
+import cucarachaAlemana from '../../public/images/cucaracha-alemana.jpg'
+import cucarachaOriental from '../../public/images/cucaracha-oriental.jpg'
 const Cockroach = () => {
   return (
     <Layout>
@@ -25,15 +27,25 @@ const Cockroach = () => {
         <h2>Tipos de cucarachas más comunes</h2>
         <article>
           <h3>Cucaracha Americana</h3>
-          <p>Conocida como cucaracha voladora o volantona, es la de mayor tamaño, puede llegar a medir hasta 5cm y tiene un color marrón rojizo.</p>
+          <div>
+            <p>Conocida como cucaracha voladora o volantona, es la de mayor tamaño, puede llegar a medir hasta 5cm y tiene un color marrón rojizo.</p>
+            <Image src={cucarachaAmericana} alt='Cucaracha Americana' />
+          </div>
         </article>
         <article>
           <h3>Cucaracha Alemana</h3>
-          <p>Conocida como cucaracha rubia por su color pardo amarillento, son las que se reproducen en mayor cantidad.</p>
+          <div>
+            <p>Conocida como cucaracha rubia por su color pardo amarillento, son las que se reproducen en mayor cantidad.</p>
+            <Image src={cucarachaAlemana} alt='Cucaracha Alemana' />
+          </div>
         </article>
         <article>
           <h3>Cucaracha Oriental</h3>
-          <p>Conocida como cucaracha negra, suelen vivir en los alrededores de los edificios y propagarse por las cañerías.</p>
+          <div>
+
+            <p>Conocida como cucaracha negra, suelen vivir en los alrededores de los edificios y propagarse por las cañerías.</p>
+            <Image src={cucarachaOriental} alt='Cucaracha Oriental' />
+          </div>
         </article>
       </section>
       <section className={styles.paragraphs3}>

@@ -6,8 +6,7 @@
 }
 
 .paragraphs,
-.paragraphs2,
-.paragraphs3 {
+.paragraphs2 {
   color: black;
   width: 90vw;
   display: flex;
@@ -28,44 +27,27 @@
   p {
     padding: 1rem;
   }
-}
-
-.paragraphs2 {
-  h3 {
-    text-align: center;
-    font-weight: bold;
-    background-color: $green-1;
-  }
-
-  div {
-    display: flex;
-
-    img {
-      float: left;
-      padding: .5rem;
-      width: 100px;
-      height: 100px;
-    }
-  }
-}
-
-.paragraphs3 {
-  color: white;
-  background-color: $blue-1;
-  border-radius: 1rem;
-  padding: 1rem;
-
-  h3 {
-    text-align: center;
-    font-weight: bold;
-    padding: .5rem;
-  }
 
   ul {
-    padding-left: 1rem;
+    padding: 0 1rem;
 
     li {
       list-style: inside;
     }
+  }
+}
+
+.paragraphs2 {
+  position: relative;
+  background-color: $blue-1;
+  border-radius: 1rem;
+  color: white;
+
+  img {
+    position: absolute;
+    right: -8px;
+    top: -20px;
+    width: 50px;
+    height: 50px;
   }
 }
