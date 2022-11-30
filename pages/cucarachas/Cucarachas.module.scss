@@ -13,7 +13,8 @@
 }
 
 .paragraphs,
-.paragraphs2 {
+.paragraphs2,
+.paragraphs3 {
   color: black;
   width: 90vw;
   display: flex;
@@ -37,6 +38,14 @@
 }
 
 .paragraphs2 {
+  h3 {
+    text-align: center;
+    font-weight: bold;
+    background-color: $green-1;
+  }
+}
+
+.paragraphs3 {
   color: white;
   background-color: $blue-1;
   border-radius: 1rem;

@@ -5,7 +5,7 @@ import styles from './Card.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Card = ({ alt, image, title, descripton, link }) => {
+const Card = ({ alt, image, title, description, link }) => {
   return (
     <section className={styles.card}>
       <Link href={`/${link}`}>
@@ -13,7 +13,7 @@ const Card = ({ alt, image, title, descripton, link }) => {
           <Image src={image} alt={alt} />
         </div>
         <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{descripton}</p>
+        <p className={styles.description}>{description}</p>
       </Link>
     </section>
   )

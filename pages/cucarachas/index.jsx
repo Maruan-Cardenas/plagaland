@@ -22,6 +22,21 @@ const Cockroach = () => {
         <p>El estudio del origen y biología del insecto, previo a la eliminación de cucarachas, es muy importante para realizar un tratamiento adecuado en el momento y lugar preciso.</p>
       </section>
       <section className={styles.paragraphs2}>
+        <h2>Tipos de cucarachas más comunes</h2>
+        <article>
+          <h3>Cucaracha Americana</h3>
+          <p>Conocida como cucaracha voladora o volantona, es la de mayor tamaño, puede llegar a medir hasta 5cm y tiene un color marrón rojizo.</p>
+        </article>
+        <article>
+          <h3>Cucaracha Alemana</h3>
+          <p>Conocida como cucaracha rubia por su color pardo amarillento, son las que se reproducen en mayor cantidad.</p>
+        </article>
+        <article>
+          <h3>Cucaracha Oriental</h3>
+          <p>Conocida como cucaracha negra, suelen vivir en los alrededores de los edificios y propagarse por las cañerías.</p>
+        </article>
+      </section>
+      <section className={styles.paragraphs3}>
         <h2>¿Cómo saber si tengo cucarachas en casa?</h2>
         <p>Plagaland es una empresa de control de plagas especializada en la fumigación, desinfección, desinsectación y desratización.</p>
         <h3>¿Que residuos o restos dejan las cucarachas?</h3>
@@ -29,7 +44,7 @@ const Cockroach = () => {
           <li>Manchas en muebles, zócalos o paredes</li>
           <li>Puntos negros de 1 mm en zócalos o muebles (heces)</li>
           <li>Restos amputados (alas, patas dentadas, antenas)</li>
-          <li>Huvos u Ootecas</li>
+          <li>Huevos u Ootecas</li>
         </ul>
       </section>
       <Form plaga='de cucarachas' />

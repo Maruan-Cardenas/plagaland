@@ -43,7 +43,7 @@ export default function Home () {
       <SwiperCarouselBanner />
       <div className={styles.description}>
         <p>Plagaland es una empresa de control de plagas especializada en la fumigación, desinfección y desratización.</p>
-        <p>Nos esforzamos en proporcionar rápidamente tratamientos eficaces en las provincias de Málaga y Granada. Para ello realizamos la aplicación del mejor productoy la prestación de un excelente servicio postventa</p>
+        <p>Nos esforzamos en proporcionar rápidamente tratamientos eficaces en las provincias de Málaga y Granada. Para ello realizamos la aplicación del mejor producto y la prestación de un excelente servicio postventa</p>
       </div>
       <section id='especialidad' className={styles.cardBox}>
         <h2>
@@ -52,7 +52,7 @@ export default function Home () {
         <div>
           {
             cards.map(({ title, description, image, link }) => (
-              <Card key={title} link={link} title={title} image={image} descripton={description} />
+              <Card key={title} link={link} title={title} image={image} description={description} />
             ))
           }
         </div>
