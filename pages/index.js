@@ -17,17 +17,17 @@ const cards = [{
   image: cucaracha,
   title: 'Cucarachas',
   description: 'Inspeccionar y tratar las plagas de cucarachas tipo Alemana, Oriental, Americana y de banda marrón.',
-  link: 'cucharachas'
+  link: 'cucarachas'
 },
 {
   image: chinche,
-  title: 'Chinche',
+  title: 'Chinches',
   description: 'Prevenir y controlar las infestaciones de parásitos como chinches domésticas y garrapatas.',
   link: 'chinches'
 },
 {
   image: hormiga,
-  title: 'Hormiga',
+  title: 'Hormigas',
   description: 'Controlar y eliminar las plagas de hormigas y otros insectos localizados en casas y huertos.',
   link: 'hormigas'
 }, {
@@ -42,25 +42,24 @@ export default function Home () {
     <Layout title='Plagaland'>
       <SwiperCarouselBanner />
       <div className={styles.description}>
-        <p>En Ambiplag tenemos para ti el mejor servicio para solucionar todo tipo de problemas ocasionados por plagas de forma rápida. Intervenimos de forma inmediata y ponemos a tu disposición el mejor asesoramiento de nuestro equipo técnico para que obtengas los resultados más eficaces.</p>
+        <p>Plagaland es una empresa de control de plagas especializada en la fumigación, desinfección y desratización.</p>
+        <p>Nos esforzamos en proporcionar rápidamente tratamientos eficaces en las provincias de Málaga y Granada. Para ello realizamos la aplicación del mejor productoy la prestación de un excelente servicio postventa</p>
       </div>
       <section id='especialidad' className={styles.cardBox}>
         <h2>
           Eliminación de plagas
-          <div className={styles.line} />
-          <div className={styles.line2} />
         </h2>
         <div>
           {
-            cards.map(({ title, description, image }) => (
-              <Card key={title} title={title} image={image} descripton={description} />
+            cards.map(({ title, description, image, link }) => (
+              <Card key={title} link={link} title={title} image={image} descripton={description} />
             ))
           }
         </div>
       </section>
       <div className={styles.description2}>
         <p>
-          Las plagas es un problema muy común que los hogares y negocios experimentan alguna vez, con mayor o menos intensidad. En Plagaland somos conscientes de lo importante que es intervenir rápido e identificar cuanto antes la presencia de insectos, roedores, termitas o cualquier especie causante de plagas.
+          Las plagas es un problema muy común que los hogares y negocios experimentan alguna vez, con mayor o menos intensidad. En Plagaland somos conscientes de lo importante que es intervenir rápido e identificar cuanto antes la presencia de insectos, roedores.
         </p>
         <p>
           Intervenimos de manera urgente con cuatro métodos de erradicación: desinfectar, desinsectar, fumigar y desratizar.

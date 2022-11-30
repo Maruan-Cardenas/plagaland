@@ -1,0 +1,31 @@
+@import '../../styles/colors.scss';
+
+.title {
+  position: relative;
+  margin: 10vh;
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(60deg, $blue-1, $green-1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: tomato;
+  padding: .1rem;
+
+  &::after,
+  &::before {
+    content: '';
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background: linear-gradient(70deg, $blue-1, $blue-2);
+    width: 50%;
+    height: 4px;
+  }
+
+  &::before {
+    background: linear-gradient(70deg, $green-1, $green-2);
+    bottom: -20px;
+    width: 25%;
+  }
+}
