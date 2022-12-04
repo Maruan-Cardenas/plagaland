@@ -1,6 +1,7 @@
 @import '../../styles/colors.scss';
 
 .card {
+  position: relative;
   width: 90vw;
   height: 24em;
   background: linear-gradient(80deg, $blue-1, $blue-2 );
@@ -34,6 +35,12 @@
   .description {
     padding: 1rem;
     font-size: .8rem;
+  }
+
+  .more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
   }
 
 }
