@@ -1,7 +1,15 @@
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: black;
   height: 10vh;
+  color: white;
+  padding: 2rem;
+
+  .author {
+    width: 100%;
+    text-align: center;
+  }
 }

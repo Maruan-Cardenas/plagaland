@@ -7,9 +7,6 @@ import { useForm, ValidationError } from '@formspree/react'
 // Icons
 import { WhatsApp, Email, Phone } from '../Icons'
 
-// Components
-import Link from 'next/link'
-
 const Form = ({ plaga }) => {
   const [state, handleSubmit] = useForm('mvoyavkj')
   if (state.succeeded) {
@@ -28,12 +25,8 @@ const Form = ({ plaga }) => {
       <h4>Necesitas acabar con una plaga {plaga} contáctanos</h4>
       <div className={styles.formBox}>
         <div className={styles.contact}>
-          <Link href='tel:+34607600806'>
-            <Phone />
-          </Link>
-          <Link href='https://wa.me/+34607600806'>
-            <WhatsApp />
-          </Link>
+          <Phone />
+          <WhatsApp />
           <Email />
         </div>
         <form onSubmit={handleSubmit}>

@@ -5,9 +5,6 @@ import styles from './Card.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 
-// Motion
-import { motion } from 'framer-motion'
-
 const Card = ({ alt, image, title, description, link }) => {
   return (
     <Link href={`/${link}`}>
@@ -19,20 +16,9 @@ const Card = ({ alt, image, title, description, link }) => {
         <p className={styles.description}>{description}</p>
         <span className={styles.more}>
           Ver más
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            {' >'}
-          </motion.span>
-          <motion.span
-            initial={{ x: '-5px' }}
-            whileInView={{ x: 0 }}
-            transition={{ duration: 1, repeat: 'infinite', ease: 'easeInOut' }}
-          >
-            {' >'}
-          </motion.span>
+          <span className={styles.one}>{' >'}</span>
+          <span className={styles.two}>{' >'}</span>
+          <span className={styles.three}>{' >'}</span>
         </span>
       </article>
     </Link>

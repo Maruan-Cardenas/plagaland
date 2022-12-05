@@ -3,6 +3,8 @@ import { useState } from 'react'
 
 import styles from './Nav.module.scss'
 
+import { Email, Phone, WhatsApp } from '../Icons'
+
 const links = [{
   label: 'Inicio',
   link: 'inicio'
@@ -31,6 +33,11 @@ const Nav = () => {
             </li>
           ))
         }
+          <div className={styles.contact}>
+            <Email />
+            <Phone />
+            <WhatsApp />
+          </div>
         </ul>
         <button className={nav ? styles.button : styles.buttonClose} onClick={() => setNav(!nav)}><div /></button>
       </nav>
