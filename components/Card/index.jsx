@@ -17,7 +17,23 @@ const Card = ({ alt, image, title, description, link }) => {
         </div>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.description}>{description}</p>
-        <motion.span className={styles.more}>Ver más</motion.span>
+        <span className={styles.more}>
+          Ver más
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            {' >'}
+          </motion.span>
+          <motion.span
+            initial={{ x: '-5px' }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 1, repeat: 'infinite', ease: 'easeInOut' }}
+          >
+            {' >'}
+          </motion.span>
+        </span>
       </article>
     </Link>
   )

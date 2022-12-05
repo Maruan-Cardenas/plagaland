@@ -9,6 +9,7 @@ import Form from '../../components/Form'
 
 // Images
 import cucaracha from '../../public/images/cucaracha.jpg'
+import cucaracha2 from '../../public/images/cucaracha2.png'
 import cucarachaAmericana from '../../public/images/cucaracha-americana.jpg'
 import cucarachaAlemana from '../../public/images/cucaracha-alemana.jpg'
 import cucarachaOriental from '../../public/images/cucaracha-oriental.jpg'
@@ -49,6 +50,7 @@ const Cockroach = () => {
         </article>
       </section>
       <section className={styles.paragraphs3}>
+        <Image src={cucaracha2} alt='plaga de cucarachas' />
         <h2>¿Cómo saber si tengo cucarachas en casa?</h2>
         <p>Plagaland es una empresa de control de plagas especializada en la fumigación, desinfección, desinsectación y desratización.</p>
         <h3>¿Que residuos o restos dejan las cucarachas?</h3>
