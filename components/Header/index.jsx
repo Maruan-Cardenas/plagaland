@@ -8,6 +8,7 @@ import Image from 'next/image'
 // Images
 import logo from '../../public/images/logo.png'
 import Nav from '../Nav'
+import { Phone, WhatsApp } from '../Icons'
 
 const Header = () => {
   return (
@@ -19,6 +20,10 @@ const Header = () => {
           </Link>
         </div>
         <Nav />
+        <div className={styles.contact}>
+          <Phone />
+          <WhatsApp />
+        </div>
       </header>
       <div id='inicio' className={styles.box} />
     </>

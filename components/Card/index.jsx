@@ -4,24 +4,27 @@ import styles from './Card.module.scss'
 // Next Components
 import Image from 'next/image'
 import Link from 'next/link'
+import { Phone, WhatsApp } from '../Icons'
 
 const Card = ({ alt, image, title, description, link }) => {
   return (
-    <Link href={`/${link}`}>
-      <article className={styles.card}>
-        <div className={styles.image}>
-          <Image src={image} alt={alt} />
-        </div>
-        <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{description}</p>
-        <span className={styles.more}>
-          Ver más
-          <span className={styles.one}>{' >'}</span>
-          <span className={styles.two}>{' >'}</span>
-          <span className={styles.three}>{' >'}</span>
+    <article className={styles.card}>
+      <Image src={image} alt={alt} />
+      <h3 className={styles.title}>{title}</h3>
+      <p className={styles.description}>{description}</p>
+      <div className={styles.information}>
+        <span className={styles.contact}>
+          <Phone />
+          <WhatsApp />
         </span>
-      </article>
-    </Link>
+        <Link className={styles.buttonMore} href={`/${link}`}>
+          Ver más
+          <div className={styles.one}>{' >'}</div>
+          <div className={styles.two}>{' >'}</div>
+          <div className={styles.three}>{' >'}</div>
+        </Link>
+      </div>
+    </article>
   )
 }
 

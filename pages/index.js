@@ -41,7 +41,11 @@ const cards = [{
 
 export default function Home () {
   return (
-    <Layout title='Plagaland'>
+    <Layout
+      title='Plagaland || Home'
+      description='Plagaland es una empresa de control de plagas especializada en la fumigación, desinfección y desratización'
+      keywords='plagas, fumigar, fumigación, control de plagas, infestaciones'
+    >
       <SwiperCarouselBanner />
       <div className={styles.description}>
         <Image className={styles.image} src={cucarachaPng} alt='Eliminación de cucarachas' />
@@ -52,7 +56,7 @@ export default function Home () {
         <h2>
           Eliminación de plagas
         </h2>
-        <div>
+        <div className={styles.cardContainer}>
           {
             cards.map(({ title, description, image, link }) => (
               <Card key={title} link={link} title={title} image={image} description={description} />

@@ -16,12 +16,29 @@
   padding: 0 0 0 1rem;
 
   @media screen and (min-width: 768px) {
-    padding: 0 0 0 2rem;
+    padding: 0 1rem;
   }
 
   .logo {
     img {
       height: 50px;
+    }
+  }
+
+  .contact {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        color: $blue-2;
+        width: 1.7rem;
+        height: 1.7rem;
+      }
     }
   }
 }

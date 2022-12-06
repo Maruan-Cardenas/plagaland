@@ -43,6 +43,9 @@ const Form = ({ plaga }) => {
               field='email'
               errors={state.errors}
             />
+            <span>
+              (O)
+            </span>
             <input
               type='number'
               name='phone'

@@ -19,10 +19,10 @@ const links = [{
 }]
 
 const Nav = () => {
-  const [nav, setNav] = useState(true)
+  const [nav, setNav] = useState(false)
   return (
     <>
-      <nav className={nav ? styles.navClose : styles.nav}>
+      <nav className={nav ? styles.navMobile : styles.nav}>
         <ul>
           {
           links.map(({ label, link }) => (
@@ -39,7 +39,7 @@ const Nav = () => {
             <WhatsApp />
           </div>
         </ul>
-        <button className={nav ? styles.button : styles.buttonClose} onClick={() => setNav(!nav)}><div /></button>
+        <button className={nav ? styles.buttonClose : styles.button} onClick={() => setNav(!nav)}><div /></button>
       </nav>
     </>
   )
