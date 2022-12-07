@@ -14,7 +14,7 @@ const links = [{
   link: 'especialidad'
 },
 {
-  label: 'Contácto',
+  label: 'Contacto',
   link: 'contacto'
 }]
 
@@ -26,7 +26,7 @@ const Nav = () => {
         <ul>
           {
           links.map(({ label, link }) => (
-            <li key={link} onClick={() => setNav(true)}>
+            <li key={link} onClick={() => setNav(false)}>
               <Link href={`/#${link}`}>
                 {label}
               </Link>

@@ -69,6 +69,9 @@ const Form = ({ plaga }) => {
             {state.submitting ? 'Enviando...' : 'Contáctame'}
           </button>
         </form>
+        <div className={styles.map}>
+          <iframe src='https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d102277.7816464275!2d-4.173033547295396!3d36.76623287325088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xd7245ef7c3bfa99%3A0x480e5eaae64a021c!2zQy4gUHJ0YSBOdWV2YSwgOCwgMjk3MDAgVsOpbGV6LU3DoWxhZ2EsIE3DoWxhZ2E!3m2!1d36.7662534!2d-4.1029935!5e0!3m2!1ses-419!2ses!4v1670403905273!5m2!1ses-419!2ses' width='600' height='450' allowfullscreen='' loading='lazy' />
+        </div>
       </div>
     </section>
   )

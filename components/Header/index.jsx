@@ -19,7 +19,9 @@ const Header = () => {
             <Image src={logo} alt='Logo' />
           </Link>
         </div>
-        <Nav />
+        <div className={styles.nav}>
+          <Nav />
+        </div>
         <div className={styles.contact}>
           <Phone />
           <WhatsApp />

@@ -13,9 +13,13 @@ import ratasPng from '../../public/images/rata.png'
 
 const Cockroach = () => {
   return (
-    <Layout>
+    <Layout
+      title='Plagaland | Ratas'
+      description='Los roedores, como las ratas y los ratones, son responsables de propagar enfermedades, dañar la comida y propiedades. Tienen una gran capacidad de adaptación a los entornos y alimentos, estos animales son una gran problema y cualquier casa o local es propicia a sufrir una plaga de estos roedores'
+      keywords='roedores, ratas, ratones, plaga de ratas, infecciones por ratas, eliminar ratas'
+    >
       <Image className={styles.image} src={ratas} alt='Eliminación de ratas' />
-      <Title id='especialidad'>Eliminar Ratas</Title>
+      <Title id='especialidad'>Eliminar plaga de Ratas en Málaga y Granada</Title>
       <section className={styles.paragraphs}>
         <h2>El problema de las Ratas</h2>
         <p>Los roedores, como las ratas y los ratones, son responsables de propagar enfermedades, dañar la comida y propiedades.</p>

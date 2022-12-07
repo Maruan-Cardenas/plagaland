@@ -5,7 +5,7 @@ import styles from './Footer.module.scss'
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div>Copy rigth &copy; Plagaland</div>
+      <div>Copy rigth &copy; Plagaland grupo ambiplag</div>
       <div className={styles.author}>
         Website of
         <span>

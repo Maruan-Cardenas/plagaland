@@ -10,6 +10,7 @@
   padding: 1rem;
 
   h4 {
+    color: white;
     font-size: 1.2rem;
     padding: 1rem;
   }
@@ -36,7 +37,8 @@
     @media screen and (min-width: 768px) {
       width: 70vw;
       flex-direction: row;
-      justify-content: space-ev;
+      gap: 2rem;
+      justify-content: space-between;
     }
 
     .contact {
@@ -44,8 +46,11 @@
       align-items: center;
       justify-content: space-between;
       gap: 3rem;
+      padding: 0;
+      margin-bottom: 2rem;
 
       @media screen and (min-width: 768px) {
+        margin-bottom: 0;
         flex-direction: column;
       }
 
@@ -77,6 +82,7 @@
         align-items: center;
 
         span {
+          color: white;
           padding: 1rem;
         }
       }
@@ -84,15 +90,11 @@
       input,
       textarea,
       button {
-        width: 90VW;
+        width: 18rem;
         padding: 1rem;
         border-bottom: 3px solid $orange;
         box-shadow: 0px 0px 3px $orange;
         border-radius: .5rem;
-
-        @media screen and (min-width: 768px) {
-          width: 30vw;
-        }
 
         &::placeholder {
           color: white;
@@ -101,19 +103,27 @@
 
       button {
         background-color: $orange;
-        width: 50vw;
+        width: 10rem;
         transition: box-shadow 1s, background-color 1s;
         color: white;
         border: none;
-
-        @media screen and (min-width: 768px) {
-          width: 15vw;
-        }
 
         &:hover {
           box-shadow: none;
           background-color: $blue-1;
         }
+      }
+    }
+
+    .map {
+      width: 100%;
+      margin-top: 2rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0px 0px 4px $blue-1;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
       }
     }
   }

@@ -15,9 +15,13 @@ import cucarachaAlemana from '../../public/images/cucaracha-alemana.jpg'
 import cucarachaOriental from '../../public/images/cucaracha-oriental.jpg'
 const Cockroach = () => {
   return (
-    <Layout>
+    <Layout
+      title='Plagaland | Cucarachas'
+      description='Las Cucarachas son insectos que contaminan productos con sus deposiciones y son transmisores de enfermedades'
+      keywords='cucarachas, eliminar cucarachas, plaga de cucarachas, infección de cucarachas, enfermedades por cucarachas, eliminar plaga de cucarachas'
+    >
       <Image className={styles.image} src={cucaracha} alt='Eliminación de cucarachas' />
-      <Title id='especialidad'>Eliminar Cucarachas</Title>
+      <Title id='especialidad'>Eliminar plaga de Cucarachas en Málaga y Granada</Title>
       <section className={styles.paragraphs}>
         <h2>El problema de las cucarachas</h2>
         <p>¿Por qué son un verdadero problema? Estos insectos contaminan productos con sus deposiciones y transmiten enfermedades como la gastroenteritis. Son potenciales portadores y transmisores de infecciones.</p>

@@ -11,11 +11,15 @@ import Title from '../../components/Title'
 import chinche from '../../public/images/chinche.png'
 import chinche2 from '../../public/images/chinche2.png'
 
-const Cockroach = () => {
+const Bedbugs = () => {
   return (
-    <Layout>
+    <Layout
+      title='Plagaland | Chinches'
+      description='Las Chinches son una de las mayores plagas y más preocupantes en cuanto a afecciones directa que al ser humano puede provocar'
+      keywords='Chinches, fumigación de chinches, eliminar chinches, desinfección de chinches, infecciones por chinches, plaga de chinches, que son las chinches'
+    >
       <Image className={styles.image} src={chinche} alt='Eliminación de cucarachas' />
-      <Title id='especialidad'>Eliminar Chinches</Title>
+      <Title id='especialidad'>Eliminar plaga de Chinches en Málaga y Granada</Title>
       <section className={styles.paragraphs}>
         <h2>El problema de las Chinches</h2>
         <p>
@@ -40,4 +44,4 @@ const Cockroach = () => {
   )
 }
 
-export default Cockroach
+export default Bedbugs

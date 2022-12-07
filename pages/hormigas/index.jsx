@@ -13,9 +13,13 @@ import hormigaPng from '../../public/images/hormiga.png'
 
 const Cockroach = () => {
   return (
-    <Layout>
+    <Layout
+      title='Plagaland | Hormigas'
+      description='Las hormigas son una plaga que se activa con la llegada de la primavera. Debido a las temperaturas más cálidas de los últimos años, estos insectos han proliferado de una manera significativa'
+      keywords='hormigas, eliminar hormigas, plaga de hormigas, infección de hormigas, desinfección de hormigas'
+    >
       <Image className={styles.image} src={hormigas} alt='Eliminación de hormigas' />
-      <Title id='especialidad'>Eliminar Hormigas</Title>
+      <Title id='especialidad'>Eliminar plaga de Hormigas en Málaga y Granada</Title>
       <section className={styles.paragraphs}>
         <h2>El problema de las Hormigas</h2>
         <p>Las hormigas son una plaga que se activa con la llegada de la primavera. Debido a las temperaturas más cálidas de los últimos años, estos insectos han proliferado de una manera significativa, con una adaptación sorprendente para vincular su actividad con la del ser humano invadiendo sus viviendas.</p>

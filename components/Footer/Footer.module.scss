@@ -9,7 +9,13 @@
   padding: 2rem;
 
   .author {
+    display: flex;
     width: 100%;
-    text-align: center;
+    justify-content: flex-end;
+    gap: .5rem;
+
+    span {
+      color: skyblue
+    }
   }
 }
