@@ -8,7 +8,7 @@ import Form from '../../components/Form'
 import Title from '../../components/Title'
 
 // Images
-import chinche from '../../public/images/chinche.png'
+import chinche from '../../public/images/chinche.jpg'
 import chinche2 from '../../public/images/chinche2.png'
 
 const Bedbugs = () => {
@@ -39,7 +39,7 @@ const Bedbugs = () => {
         <h2>La importancia de erradicar una plaga de chinches</h2>
         <p>Las chinches son hematófagas, se alimentan de sangre, por lo que, para seguir con vida necesitan picarnos. Las picaduras cuando se producen son casi indoloras, el problema es posterior, cuando se producen reacciones cutáneas dependiendo de la sensibilidad de cada individuo que pueden llegar a infectarse e incluso producir diferentes grados de necrosis cutánea.</p>
       </section>
-      <Form plaga='de chiches' />
+      <Form plaga='de chinches' />
     </Layout>
   )
 }

@@ -10,7 +10,7 @@ import Form from '../components/Form'
 // Image
 import cucaracha from '../public/images/cucaracha.jpg'
 import cucarachaPng from '../public/images/cucaracha.png'
-import chinche from '../public/images/chinche.png'
+import chinche from '../public/images/chinche.jpg'
 import hormiga from '../public/images/hormiga.webp'
 import rata from '../public/images/ratas.jpg'
 import Image from 'next/image'
@@ -42,7 +42,7 @@ const cards = [{
 export default function Home () {
   return (
     <Layout
-      title='Plagaland || Home'
+      title='Plagaland | Home'
       description='Plagaland es una empresa de control de plagas especializada en la fumigación, desinfección y desratización'
       keywords='plagas, fumigar, fumigación, control de plagas, infestaciones'
     >

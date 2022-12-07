@@ -37,7 +37,7 @@ const Cockroach = () => {
           <li>Muebles o elementos con marcas de mordeduras y deterioros</li>
         </ul>
       </section>
-      <Form plaga='de hormigas' />
+      <Form plaga='de ratas' />
     </Layout>
   )
 }

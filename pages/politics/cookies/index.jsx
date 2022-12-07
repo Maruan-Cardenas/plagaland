@@ -1,11 +1,11 @@
-import styles from './Cookies.module.scss'
+import styles from '../Politics.module.scss'
 
-import Layout from '../../components/Layout'
+import Layout from '../../../components/Layout'
 
 const Cookies = () => {
   return (
     <Layout title='Plagaland | Cookies'>
-      <section className={styles.cookies}>
+      <section className={styles.politics}>
         <h1>Política de Cookies</h1>
         <section>
           <h2>¿Qué es una "Cookie"?</h2>
