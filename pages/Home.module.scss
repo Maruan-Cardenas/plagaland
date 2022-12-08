@@ -64,11 +64,19 @@
   justify-content: center;
   align-items: center;
 
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(70deg, $green-1, $green-2);
+    padding: 2rem;
+  }
+
   h2 {
     position: relative;
     font-size: 1.5rem;
     margin: 2rem;
-    color: black;
+    color: white;
     font-weight: bold;
 
     @media screen and (min-width: 768px) {
@@ -114,12 +122,44 @@
     }
 
   }
+}
 
-  @media screen and (min-width: 768px) {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(70deg, $green-1, $green-2);
-    padding: 2rem;
+.reviews {
+  background: linear-gradient(70deg, $blue-1, $blue-2);
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    position: relative;
+    font-size: 1.5rem;
+    margin: 2rem;
+    color: white;
+    font-weight: bold;
+
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      border-radius: 1rem;
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      background-color: $orange;
+      width: 50%;
+      height: 4px;
+    }
+
+    &::before {
+      bottom: -25px;
+      width: 25%;
+    }
   }
 }

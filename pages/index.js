@@ -6,6 +6,11 @@ import Layout from '../components/Layout'
 import SwiperCarouselBanner from '../components/Swiper/Banner'
 import Card from '../components/Card'
 import Form from '../components/Form'
+import Slider from '../components/Reviews/Slider.jsx'
+import Cookie from '../components/Cookie'
+
+// Next Component
+import Image from 'next/image'
 
 // Image
 import cucaracha from '../public/images/cucaracha.jpg'
@@ -13,7 +18,6 @@ import cucarachaPng from '../public/images/cucaracha.png'
 import chinche from '../public/images/chinche.jpg'
 import hormiga from '../public/images/hormiga.webp'
 import rata from '../public/images/ratas.jpg'
-import Image from 'next/image'
 
 const cards = [{
   image: cucaracha,
@@ -73,7 +77,12 @@ export default function Home () {
           Intervenimos de manera urgente con cuatro métodos de erradicación: desinfectar, desinsectar, fumigar y desratizar.
         </p>
       </section>
+      <section id='opiniones' className={styles.reviews}>
+        <h3 className={styles.title}>Opiniones</h3>
+        <Slider />
+      </section>
       <Form />
+      <Cookie />
     </Layout>
   )
 }

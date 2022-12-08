@@ -1,0 +1,36 @@
+{
+  "reviews": [
+    {
+      "name": "Fran Mollon",
+      "positive": "Calidad, Profesionalidad, Valor",
+      "description": "Estoy encantado con esta empresa! Tenia un problema con las chinches que no podia más, y me lo solucionaron.",
+      "service": "Exterminio de chinches",
+      "start": 5,
+      "link": "https://g.co/kgs/uFSTST"
+    },
+    {
+      "name": "Jorge",
+      "positive": "Profesionalidad, Puntualidad, Valor",
+      "description": "Muy contento con el servicio y rapidez Mucho más baratos que otras empresas.Tenía chinches y acabaron con ellos enseguida.",
+      "service": "Exterminio de cucarachas",
+      "start": 5,
+      "link": "https://g.co/kgs/1789nc"
+    },
+    {
+      "name": "Marina Ruiz",
+      "positive": "Calidad, Profesionalida",
+      "description": "Después de mirar varias empresas de fumigacion me quede con Ambiplag, su trato fue bastante amable, me explicaron el proceso muy detallado en todo momento, el chico que vino a casa me volvió a explicar lo que debía hacer y las pulgas desaparecieron!! Gracias a ellos ya puedo estar tranquila!!",
+      "service": "Exterminio de pulgas y ácaros",
+      "start": 5,
+      "link": "https://g.co/kgs/e5hdZb"
+    },
+    {
+      "name": "Blanca BB",
+      "positive": "Calidad, Capacidad de respuesta, Profesionalidad, Puntualidad",
+      "description": "Después de mirar varias empresas de fumigacion me quede con Ambiplag, su trato fue bastante amable, me explicaron el proceso muy detallado en todo momento, el chico que vino a casa me volvió a explicar lo que debía hacer y las pulgas desaparecieron!! Gracias a ellos ya puedo estar tranquila!!Muchas gracias Ambiplag!!!!!",
+      "service": "Exterminio de pulgas y ácaros",
+      "start": 5,
+      "link": "https://g.co/kgs/e5hdZb"
+    }
+  ]
+}

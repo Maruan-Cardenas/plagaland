@@ -14,6 +14,10 @@ const links = [{
   link: 'especialidad'
 },
 {
+  label: 'Opiniones',
+  link: 'opiniones'
+},
+{
   label: 'Contacto',
   link: 'contacto'
 }]

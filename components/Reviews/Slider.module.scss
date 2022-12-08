@@ -1,0 +1,94 @@
+.slider {
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    width: 60rem;
+  }
+
+  ul {
+    display: flex;
+    width: 20rem;
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+      width: 45rem;
+      gap: 5rem;
+    }
+
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    animation: cambio 20s infinite alternate linear;
+
+    @media screen and (min-width: 768px) {
+      animation: cambioDesktop 20s infinite alternate linear;
+    }
+  }
+
+  @keyframes cambioDesktop {
+    0% {
+      transform: translateX(0)
+    }
+
+    20% {
+      transform: translateX(0)
+    }
+
+    25% {
+      transform: translateX(-25rem)
+    }
+
+    50% {
+      transform: translateX(-25rem)
+    }
+
+    55% {
+      transform: translateX(-50rem)
+    }
+
+    100% {
+      transform: translateX(-50rem)
+    }
+  }
+
+  @keyframes cambio {
+    0% {
+      transform: translateX(0)
+    }
+
+    20% {
+      transform: translateX(0)
+    }
+
+    25% {
+      transform: translateX(-20rem)
+    }
+
+    45% {
+      transform: translateX(-20rem)
+    }
+
+    50% {
+      transform: translateX(-40rem)
+    }
+
+    70% {
+      transform: translateX(-40rem)
+    }
+
+    75% {
+      transform: translateX(-60rem)
+    }
+
+    100% {
+      transform: translateX(-60rem)
+    }
+  }
+}
