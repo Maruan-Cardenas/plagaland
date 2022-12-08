@@ -43,7 +43,7 @@ const Nav = () => {
             <WhatsApp />
           </div>
         </ul>
-        <button className={nav ? styles.buttonClose : styles.button} onClick={() => setNav(!nav)}><div /></button>
+        <span className={nav ? styles.buttonClose : styles.button} onClick={() => setNav(!nav)}><div /></span>
       </nav>
     </>
   )

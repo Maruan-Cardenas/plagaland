@@ -8,8 +8,8 @@ const Slider = () => {
     <div className={styles.slider}>
       <ul>
         {
-          reviews.map((res, index) => (
-            <li key={index}>
+          reviews.map((res) => (
+            <li key={res.id}>
               <Reviews data={res} />
             </li>
           ))
