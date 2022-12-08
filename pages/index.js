@@ -23,23 +23,27 @@ const cards = [{
   image: cucaracha,
   title: 'Cucarachas',
   description: 'Inspeccionar y tratar las plagas de cucarachas tipo Alemana, Oriental, Americana y de banda marrón.',
+  alt: 'Eliminar cucarachas',
   link: 'cucarachas'
 },
 {
   image: chinche,
   title: 'Chinches',
   description: 'Prevenir y controlar las infestaciones de parásitos como chinches domésticas y garrapatas.',
+  alt: 'Eliminar Chinches',
   link: 'chinches'
 },
 {
   image: hormiga,
   title: 'Hormigas',
   description: 'Controlar y eliminar las plagas de hormigas y otros insectos localizados en casas y huertos.',
+  alt: 'Eliminar Hormigas',
   link: 'hormigas'
 }, {
   image: rata,
   title: 'Ratas',
   description: 'Controlar, prevenir y tratar las plagas de ratas negras, marrones y otros tipos para su eliminación.',
+  alt: 'Eliminar ratas',
   link: 'ratas'
 }]
 
@@ -62,8 +66,8 @@ export default function Home () {
         </h2>
         <div className={styles.cardContainer}>
           {
-            cards.map(({ title, description, image, link }) => (
-              <Card key={title} link={link} title={title} image={image} description={description} />
+            cards.map(({ title, description, image, link, alt }) => (
+              <Card key={title} alt={alt} link={link} title={title} image={image} description={description} />
             ))
           }
         </div>
