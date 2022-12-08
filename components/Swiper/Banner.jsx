@@ -31,7 +31,6 @@ const SwiperCarouselBanner = () => {
         slidesPerView={1}
         effect='cube'
         autoplay={{ delay: 6000 }}
-        pagination={{ clickable: true }}
       >
         <div className={styles.title}>
           <SlidePrevButton />
