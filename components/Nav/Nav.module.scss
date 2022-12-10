@@ -39,10 +39,14 @@
 
   .contact {
     display: flex;
-    gap: 5rem;
+    gap: 1em;
+
+    span {
+      font-size: .8em;
+    }
 
     svg {
-      margin-top: 8rem;
+      margin-top: 6rem;
       width: 2rem;
       height: 2rem;
     }

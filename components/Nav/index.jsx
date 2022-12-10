@@ -37,11 +37,11 @@ const Nav = () => {
             </li>
           ))
         }
-          <div className={styles.contact}>
+          <li className={styles.contact}>
             <Email />
             <Phone />
             <WhatsApp />
-          </div>
+          </li>
         </ul>
         <span className={nav ? styles.buttonClose : styles.button} onClick={() => setNav(!nav)}><div /></span>
       </nav>

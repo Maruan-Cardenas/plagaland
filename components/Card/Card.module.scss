@@ -43,6 +43,10 @@
       display: flex;
       gap: 2rem;
 
+      span {
+        font-size: 0.01rem;
+      }
+
       svg {
         color: $green-1;
         width: 1.5rem;

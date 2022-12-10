@@ -8,7 +8,7 @@
   color: $blue-1;
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background: linear-gradient(10deg, white, $green-1);
 
   .reviewsBox {
     display: flex;
@@ -48,6 +48,8 @@
     .link {
       text-align: center;
       text-decoration: underline;
+      color: $blue-1;
+      font-size: 1.1em
     }
   }
 }

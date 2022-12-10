@@ -9,17 +9,17 @@ import Image from 'next/image'
 export const SlideNextButton = () => {
   const swiper = useSwiper()
   return (
-    <button className={styles.swiperNext} onClick={() => swiper.slideNext()}>
+    <span className={styles.swiperNext} onClick={() => swiper.slideNext()}>
       <Image width={35} src={row} alt='Siguiente' />
-    </button>
+    </span>
   )
 }
 
 export const SlidePrevButton = () => {
   const swiper = useSwiper()
   return (
-    <button className={styles.swiperPrev} onClick={() => swiper.slidePrev()}>
+    <span className={styles.swiperPrev} onClick={() => swiper.slidePrev()}>
       <Image width={35} src={row} alt='Anterior' />
-    </button>
+    </span>
   )
 }
