@@ -39,44 +39,32 @@ const SwiperCarouselBanner = () => {
         </div>
         <SwiperSlide>
           <div className={styles.sliderItem}>
-            <div>
-              <Image priority src={image1} alt='control de plagas de cucarachas' />
-            </div>
+            <Image priority src={image1} alt='control de plagas de cucarachas' />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={styles.sliderItem}>
-            <div>
-              <Image src={image2} alt='control de plagas de ratas' />
-            </div>
+            <Image src={image2} alt='control de plagas de ratas' />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={styles.sliderItem}>
-            <div>
-              <Image src={image3} alt='control de plagas de chinches' />
-            </div>
+            <Image src={image3} alt='control de plagas de chinches' />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={styles.sliderItem}>
-            <div>
-              <Image src={image4} alt='control de plagas en Málaga' />
-            </div>
+            <Image src={image4} alt='control de plagas en Málaga' />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={styles.sliderItem}>
-            <div>
-              <Image src={image5} alt='control de plagas en Sevilla' />
-            </div>
+            <Image src={image5} alt='control de plagas en Sevilla' />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className={styles.sliderItem}>
-            <div>
-              <Image src={image6} alt='control de plagas en Andalucía' />
-            </div>
+            <Image src={image6} alt='control de plagas en Andalucía' />
           </div>
         </SwiperSlide>
       </Swiper>
