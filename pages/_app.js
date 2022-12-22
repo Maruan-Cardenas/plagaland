@@ -11,12 +11,11 @@ function MyApp ({ Component, pageProps }) {
       />
       <Script strategy='lazyOnload' id='my-script'>
         {`
-          window.dataLayer = window.dataLayer || []; 
-          function gtag(){
-            dataLayer.push(arguments)
-          }
-          gtag('js', new Date())
-          gtag('config', '${key}')
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', ${key});
         `}
       </Script>
       <Component {...pageProps} />
