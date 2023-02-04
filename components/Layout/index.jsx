@@ -14,6 +14,7 @@ const Layout = ({ children, title, keywords, description }) => {
         <meta name='keywords' content={keywords} />
         <meta name='author' content='Maruan Vicente Cardenas El Hachmaoui' />
         <meta name='copyright' content='Plagaland' />
+        <meta name='google-site-verification' content='GOJ16utzr-GVMZMRIuMX6oPfj1wl97_v6YIe73eYdZQ' />
       </Head>
       <Header />
       <main className={styles.main}>{children}</main>
