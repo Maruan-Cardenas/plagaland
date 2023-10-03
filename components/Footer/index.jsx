@@ -23,7 +23,7 @@ const Footer = () => {
             <span><Link href='/politics/cookies'>Cookies</Link></span>
           </div>
         </div>
-        <div className={styles.copy}>Copy rigth &copy; Plagaland grupo ambiplag</div>
+        <div className={styles.copy}>Copy rigth &copy; Plagaland grupo ambicase</div>
         <div className={styles.author}>
           Website of
           <span>
