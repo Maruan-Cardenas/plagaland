@@ -11,7 +11,7 @@ const Footer = () => {
           <span> <Link href='/cucarachas'>Cucarachas</Link> </span>
           <span> <Link href='/chinches'>Chinches</Link> </span>
           <span> <Link href='/hormigas'>Hormigas</Link> </span>
-          <span> <Link href='/ratas'>Ratas</Link> </span>
+          <span> <Link href='/desinfeccion'>Desinfección</Link> </span>
         </div>
       </div>
       <div className={styles.footerBox2}>

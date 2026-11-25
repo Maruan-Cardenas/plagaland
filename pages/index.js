@@ -17,7 +17,7 @@ import cucaracha from '../public/images/cucaracha.jpg'
 import cucarachaPng from '../public/images/cucaracha.png'
 import chinche from '../public/images/chinche.jpg'
 import hormiga from '../public/images/hormiga.webp'
-import rata from '../public/images/ratas.jpg'
+import desinfeccion from '../public/images/desinfeccion.jpg'
 
 const cards = [{
   image: cucaracha,
@@ -40,11 +40,11 @@ const cards = [{
   alt: 'Eliminar Hormigas',
   link: 'hormigas'
 }, {
-  image: rata,
-  title: 'Ratas',
-  description: 'Controlar, prevenir y tratar las plagas de ratas negras, marrones y otros tipos para su eliminación.',
-  alt: 'Eliminar ratas',
-  link: 'ratas'
+  image: desinfeccion,
+  title: 'Desinfección',
+  description: 'Tratamientos de desinfección para devolver la asepsia a negocios y lugares públicos.',
+  alt: 'Desinfeccion',
+  link: 'desinfeccion'
 }]
 
 export default function Home () {
